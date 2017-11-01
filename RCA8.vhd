@@ -10,8 +10,9 @@ use IEEE.std_logic_1164.all;
 
 --Inputs:  A, a vector of the unsigned binary code, to be added to B
 --         B, a vector of the unsigned binary code, to be added to A
+--         Sel, 1 for subtraction, 0 for addition
 --Outputs: S, a vector of the output, the sum of A and B
---         C, carry bit of the addition of A and B
+--         Cout, carry bit of the addition of A and B
 entity RCA8 is
 	generic (N : integer := 8);
 	port(

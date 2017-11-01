@@ -1,9 +1,34 @@
---Rock Boynton
---Date: 10/30/17
---Course: CE 1901-021
---Professor: Dr. Livingston
---Purpose: This is the Structural VHDL for the Carry-Lookahead Adder (CLA)
---         implementation adding two 8-bit numbers.
-
-library IEEE;
-use IEEE.std_logic_1164.all;
+----Rock Boynton
+----Date: 10/30/17
+----Course: CE 1901-021
+----Professor: Dr. Livingston
+----Purpose: This is the Structural VHDL for the Carry-Lookahead Adder (CLA)
+----         implementation adding two 8-bit numbers.
+--
+--library ieee;
+--use IEEE.std_logic_1164.all;
+--
+----Inputs:  A, a vector of the unsigned binary code, to be added to B
+----         B, a vector of the unsigned binary code, to be added to A
+----Outputs: S, a vector of the output, the sum of A and B
+----         C, carry bit of the addition of A and B
+--entity CLA8 is
+--	generic (N : integer := 8);
+--	port(
+--		  A: in std_logic_vector(N-1 downto 0);
+--		  B: in std_logic_vector(N-1 downto 0);
+--		  Sel: in std_logic;
+--		  S: out std_logic_vector(N-1 downto 0);
+--		  Cout: out std_logic
+--);
+--		  
+--end entity CLA8;
+--
+--architecture STRUCTURAL of CLA8 is 
+--
+--signal G : std_logic_vector(3 downto 0);
+--signal P : std_logic_vector(3 downto 0); 
+--
+--
+--
+--end architecture 
