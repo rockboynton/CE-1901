@@ -22,4 +22,3 @@ Sh <= Ah xor Bh;
 Couth <= Ah and Bh;
 
 end architecture DATAFLOW;
-

@@ -39,10 +39,10 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY RCA8
+set_global_assignment -name TOP_LEVEL_ENTITY RCA8seg7
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:10:24  OCTOBER 30, 2017"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.2 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -55,7 +55,42 @@ set_global_assignment -name VHDL_FILE CSA8.vhd
 set_global_assignment -name VHDL_FILE CLA8.vhd
 set_global_assignment -name VHDL_FILE RCA8.vhd
 set_global_assignment -name VHDL_FILE half.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VHDL_FILE FA.vhd
+set_global_assignment -name VHDL_FILE HA.vhd
+set_global_assignment -name VHDL_FILE RCA4.vhd
+set_global_assignment -name VHDL_FILE CLA4.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VHDL_FILE CLC.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name BDF_FILE RCA8seg7.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C10 -to B[0]
+set_location_assignment PIN_C11 -to B[1]
+set_location_assignment PIN_D12 -to B[2]
+set_location_assignment PIN_C12 -to B[3]
+set_location_assignment PIN_A12 -to B[4]
+set_location_assignment PIN_B12 -to B[5]
+set_location_assignment PIN_A13 -to B[6]
+set_location_assignment PIN_A14 -to B[7]
+set_location_assignment PIN_B14 -to Sel
+set_location_assignment PIN_C14 -to Mhex[0]
+set_location_assignment PIN_E15 -to Mhex[1]
+set_location_assignment PIN_C15 -to Mhex[2]
+set_location_assignment PIN_C16 -to Mhex[3]
+set_location_assignment PIN_E16 -to Mhex[4]
+set_location_assignment PIN_D17 -to Mhex[5]
+set_location_assignment PIN_C17 -to Mhex[6]
+set_location_assignment PIN_D15 -to Mhex[7]
+set_location_assignment PIN_C18 -to Lhex[0]
+set_location_assignment PIN_D18 -to Lhex[1]
+set_location_assignment PIN_E18 -to Lhex[2]
+set_location_assignment PIN_B16 -to Lhex[3]
+set_location_assignment PIN_A17 -to Lhex[4]
+set_location_assignment PIN_A18 -to Lhex[5]
+set_location_assignment PIN_B17 -to Lhex[6]
+set_location_assignment PIN_A16 -to Lhex[7]
+set_location_assignment PIN_A8 -to Carry
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

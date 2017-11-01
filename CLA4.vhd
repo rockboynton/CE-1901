@@ -2,27 +2,68 @@
 ----Date: 10/30/17
 ----Course: CE 1901-021
 ----Professor: Dr. Livingston
-----Purpose: This is the Full Adder component 
+----Purpose: This is the CLA4 component 
 --
 --library IEEE;
 --use IEEE.std_logic_1164.all;
 --
 --entity CLA4 is 
---	port(Af: in std_logic;
---	     Bf: in std_logic;
---		  Cinf: in std_logic;
---		  Sf: out std_logic;
---		  Coutf: out std_logic);
+--	port(A: in std_logic_vector(3 downto 0);
+--	     B: in std_logic_vector(3 downto 0);
+--		  Cin: in std_logic;
+--		  S: out std_logic_vector(3 downto 0);
+--		  Cout: out std_logic);
 --		  
 --end entity CLA4;
 --
---architecture SSTRUCTURAL of CLA4 is 
+--architecture STRUCTURAL of CLA4 is 
 --
---signal G : std_logic_vector(3 downto 0);
---signal P : std_logic_vector(3 downto 0);
+----signal G : std_logic_vector(3 downto 0);
+----signal P : std_logic_vector(3 downto 0);
+--Signal C : std_logic_vector(3 downto 0);
 --
+--	component FA is 
+--	port(Af: in std_logic;
+--		  Bf: in std_logic;
+--		  Cinf: in std_logic;
+--		  Sf: out std_logic;
+--		  Coutf: out std_logic);
+--	end component FA;
+--	
 --begin
 --
+----Bee <= B xor (Sel&Sel&Sel&Sel&Sel&Sel&Sel&Sel);
+--C(0) <= (A(0) and B(0)) or (sel and (A(0) or B(0)));
 --
+--C(1) <= (A(1) and B(1)) or ((sel and (A(1) or B(1))) and C(0));
 --
---end architecture DATAFLOW;
+--C(2) <= (A(2) and B(2)) or ((sel and (A(2) or B(2))) and C(1));
+--
+--C(3) <= (A(3) and B(3)) or ((sel and (A(3) or B(3))) and C(2));
+--
+--	GEN_CLA: for i in 0 to 3 generate
+--	
+--		LOWERBITS: if i = 0 generate 
+--			FA1: FA port map (Af => A(i),
+--									Bf => B(i),
+--									Cinf => Sel,
+--									Sf => S(i),
+--									Coutf => C(i)
+--									);
+--		end generate LOWERBITS;
+--	
+--		UPPERBITS: if i > 0 generate 
+--			FAN: FA port map (Af => A(i),
+--									Bf => B(i),
+--									Cinf => C(i-1),
+--									Sf => S(i),
+--									Coutf => C(i)
+--									);
+--		end generate UPPERBITS;
+--						
+--end generate GEN_CLA;	
+--	
+--	
+--		
+--		  
+--end architecture STRUCTURAL;

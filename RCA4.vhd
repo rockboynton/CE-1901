@@ -13,8 +13,8 @@ use IEEE.std_logic_1164.all;
 --         Sel, 1 for subtraction, 0 for addition
 --Outputs: S, a vector of the output, the sum of A and B
 --         Cout, carry bit of the addition of A and B
-entity RCA8 is
-	generic (N : integer := 8);
+entity RCA4 is
+	generic (N : integer := 4);
 	port(
 		  A: in std_logic_vector(N-1 downto 0);
 		  B: in std_logic_vector(N-1 downto 0);
@@ -23,10 +23,10 @@ entity RCA8 is
 		  Cout: out std_logic
 );
 		  
-end entity RCA8;
+end entity RCA4;
 
 
-architecture STRUCTURAL of RCA8 is 
+architecture STRUCTURAL of RCA4 is 
 	
 	component FA is 
 	port(Af: in std_logic;
@@ -36,7 +36,7 @@ architecture STRUCTURAL of RCA8 is
 		  Coutf: out std_logic);
 	end component FA;
 	
-	signal C: std_logic_vector(N-1 downto 0); --signals of the internal carry bits
+	signal c: std_logic_vector(N-1 downto 0); --signals of the internal carry bits
 	signal Bee : std_logic_vector(N-1 downto 0); --uses an xor gate to decide whether B is positive or negative depending on sel input.
 	
 begin
