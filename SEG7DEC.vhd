@@ -62,5 +62,4 @@ begin
 		Y <= SEGMENT when '0',
 			  "11111111" when others;
 				
-				  
 end architecture DATAFLOW;
