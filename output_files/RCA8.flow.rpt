@@ -1,5 +1,5 @@
 Flow report for RCA8
-Mon Oct 30 23:46:41 2017
+Tue Oct 31 23:24:13 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,24 +41,24 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Oct 30 23:46:41 2017      ;
+; Flow Status                        ; Successful - Tue Oct 31 23:24:13 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; RCA8                                        ;
 ; Top-level Entity Name              ; RCA8                                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 18                                          ;
+;     Total combinational functions  ; 18                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 26                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -67,7 +67,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/30/2017 23:46:30 ;
+; Start date & time ; 10/31/2017 22:47:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; RCA8                ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 123719791497053.150942519016720        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 123719791497053.150950803418772        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,8 +96,22 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 665 MB              ; 00:00:26                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:26                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 689 MB              ; 00:00:26                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 531 MB              ; 00:00:01                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,6 +121,20 @@ agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; El-Blanco        ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -114,6 +142,20 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform4.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform4.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform5.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform5.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform5.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform5.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform5.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform5.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform5.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform5.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform5.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform5.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LW9 -c RCA8 --vector_source=D:/goali/VHDL/CE-1901/Waveform5.vwf --testbench_file=D:/goali/VHDL/CE-1901/simulation/qsim/Waveform5.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/goali/VHDL/CE-1901/simulation/qsim/ LW9 -c RCA8
 
 
 

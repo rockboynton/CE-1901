@@ -1,0 +1,149 @@
+|RCA8
+A[0] => FA:GEN_ADD_SUB:0:LOWERBITS:FA1.Af
+A[1] => FA:GEN_ADD_SUB:1:UPPERBITS:FAN.Af
+A[2] => FA:GEN_ADD_SUB:2:UPPERBITS:FAN.Af
+A[3] => FA:GEN_ADD_SUB:3:UPPERBITS:FAN.Af
+A[4] => FA:GEN_ADD_SUB:4:UPPERBITS:FAN.Af
+A[5] => FA:GEN_ADD_SUB:5:UPPERBITS:FAN.Af
+A[6] => FA:GEN_ADD_SUB:6:UPPERBITS:FAN.Af
+A[7] => FA:GEN_ADD_SUB:7:UPPERBITS:FAN.Af
+B[0] => Bee[0].IN0
+B[1] => Bee[1].IN0
+B[2] => Bee[2].IN0
+B[3] => Bee[3].IN0
+B[4] => Bee[4].IN0
+B[5] => Bee[5].IN0
+B[6] => Bee[6].IN0
+B[7] => Bee[7].IN0
+Sel => Bee[0].IN1
+Sel => Bee[1].IN1
+Sel => Bee[2].IN1
+Sel => Bee[3].IN1
+Sel => Bee[4].IN1
+Sel => Bee[5].IN1
+Sel => Bee[6].IN1
+Sel => Bee[7].IN1
+Sel => FA:GEN_ADD_SUB:0:LOWERBITS:FA1.Cinf
+S[0] <= FA:GEN_ADD_SUB:0:LOWERBITS:FA1.Sf
+S[1] <= FA:GEN_ADD_SUB:1:UPPERBITS:FAN.Sf
+S[2] <= FA:GEN_ADD_SUB:2:UPPERBITS:FAN.Sf
+S[3] <= FA:GEN_ADD_SUB:3:UPPERBITS:FAN.Sf
+S[4] <= FA:GEN_ADD_SUB:4:UPPERBITS:FAN.Sf
+S[5] <= FA:GEN_ADD_SUB:5:UPPERBITS:FAN.Sf
+S[6] <= FA:GEN_ADD_SUB:6:UPPERBITS:FAN.Sf
+S[7] <= FA:GEN_ADD_SUB:7:UPPERBITS:FAN.Sf
+Cout <= FA:GEN_ADD_SUB:7:UPPERBITS:FAN.Coutf
+
+
+|RCA8|FA:\GEN_ADD_SUB:0:LOWERBITS:FA1
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:1:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:2:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:3:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:4:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:5:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:6:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA8|FA:\GEN_ADD_SUB:7:UPPERBITS:FAN
+Af => Sf.IN0
+Af => Coutf.IN0
+Af => Coutf.IN0
+Bf => Sf.IN1
+Bf => Coutf.IN1
+Bf => Coutf.IN0
+Cinf => Sf.IN1
+Cinf => Coutf.IN1
+Cinf => Coutf.IN1
+Sf <= Sf.DB_MAX_OUTPUT_PORT_TYPE
+Coutf <= Coutf.DB_MAX_OUTPUT_PORT_TYPE
+
+

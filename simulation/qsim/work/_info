@@ -1,0 +1,182 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/goali/VHDL/CE-1901/simulation/qsim
+Efa
+Z1 w1509494119
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 QU]SmECo2a[Hl8eBXbHMn2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 Yd>JAFC2WgIA]bMk>i3Vn1
+R0
+Z8 8RCA8.vho
+Z9 FRCA8.vho
+l0
+L35
+V0K6EBK6P3oPeL@<b7P5Qf0
+!s100 d5[d`LdJ_Q@>zeCgEiWOX0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1509494120
+!i10b 1
+Z12 !s108 1509494120.000000
+Z13 !s90 -work|work|RCA8.vho|
+Z14 !s107 RCA8.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 2 fa 0 22 0K6EBK6P3oPeL@<b7P5Qf0
+l68
+L45
+VW=dl]gQ6ZACJ?B4RnoNJ61
+!s100 H9Z0knHaV=d<[Cofg;6E:2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Efa_vhd_vec_tst
+Z17 w1509494117
+R5
+R6
+R0
+Z18 8Waveform2.vwf.vht
+Z19 FWaveform2.vwf.vht
+l0
+L32
+VlnPLnQ]jM_0_`6AO]BDj92
+!s100 IOL7l7N<?8cDzF_9O?Qc?3
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform2.vwf.vht|
+Z21 !s107 Waveform2.vwf.vht|
+!i113 1
+R15
+R16
+Afa_arch
+R5
+R6
+DEx4 work 14 fa_vhd_vec_tst 0 22 lnPLnQ]jM_0_`6AO]BDj92
+l51
+L34
+V5`WFe`_PkXElzE?`dDoQP3
+!s100 _]iY=?dO@9Y73z7AEEc0;3
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Erca8
+Z22 w1509510253
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L35
+VAd6L^@gXYo<U4Jk2JOo:D0
+!s100 i4CkOff_P]RT4BNzkU[O`0
+R10
+32
+Z23 !s110 1509510254
+!i10b 1
+Z24 !s108 1509510254.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 4 rca8 0 22 Ad6L^@gXYo<U4Jk2JOo:D0
+l105
+L45
+V9b=9:?Y[Q0TYR9_l_@E<I2
+!s100 0D78VZj::Y]LT^YD9_M181
+R10
+32
+R23
+!i10b 1
+R24
+R13
+R14
+!i113 1
+R15
+R16
+Erca8_vhd_vec_tst
+Z25 w1509510252
+R5
+R6
+R0
+Z26 8Waveform5.vwf.vht
+Z27 FWaveform5.vwf.vht
+l0
+L32
+VUcYX6[zXZ<n0<omR;dA^M0
+!s100 1CU`CY]NK5ked2?^`F7aN1
+R10
+32
+R23
+!i10b 1
+R24
+Z28 !s90 -work|work|Waveform5.vwf.vht|
+Z29 !s107 Waveform5.vwf.vht|
+!i113 1
+R15
+R16
+Arca8_arch
+R5
+R6
+Z30 DEx4 work 16 rca8_vhd_vec_tst 0 22 UcYX6[zXZ<n0<omR;dA^M0
+l51
+L34
+V<]G:S@lboIaM9XKm`H1Lk3
+!s100 z65E6XcIihK0ZU06FL56_3
+R10
+32
+R23
+!i10b 1
+R24
+R28
+R29
+!i113 1
+R15
+R16
