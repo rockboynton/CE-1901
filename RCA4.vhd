@@ -14,14 +14,14 @@ use IEEE.std_logic_1164.all;
 --Outputs: S, a vector of the output, the sum of A and B
 --         Cout, carry bit of the addition of A and B
 entity RCA4 is
-	generic (N : integer := 4);
+--	generic (N : integer := 4);
 	port(
-		  A: in std_logic_vector(N-1 downto 0);
-		  B: in std_logic_vector(N-1 downto 0);
+		  A: in std_logic_vector(3 downto 0);
+		  B: in std_logic_vector(3 downto 0);
 		  Sel: in std_logic;
-		  S: out std_logic_vector(N-1 downto 0);
+		  S: out std_logic_vector(3 downto 0);
 		  Cout: out std_logic
-);
+   );
 		  
 end entity RCA4;
 
@@ -36,14 +36,14 @@ architecture STRUCTURAL of RCA4 is
 		  Coutf: out std_logic);
 	end component FA;
 	
-	signal c: std_logic_vector(N-1 downto 0); --signals of the internal carry bits
-	signal Bee : std_logic_vector(N-1 downto 0); --uses an xor gate to decide whether B is positive or negative depending on sel input.
+	signal c: std_logic_vector(3 downto 0); --signals of the internal carry bits
+	signal Bee : std_logic_vector(3 downto 0); --uses an xor gate to decide whether B is positive or negative depending on sel input.
 	
 begin
 	
-Bee <= B xor (Sel&Sel&Sel&Sel&Sel&Sel&Sel&Sel);
+Bee <= B xor (Sel&Sel&Sel&Sel);
 	
-	GEN_ADD_SUB: for i in 0 to N-1 generate
+	GEN_ADD_SUB: for i in 0 to 3 generate
 	
 		LOWERBITS: if i = 0 generate 
 			FA1: FA port map (Af => A(i),
@@ -65,6 +65,6 @@ Bee <= B xor (Sel&Sel&Sel&Sel&Sel&Sel&Sel&Sel);
 		
 end generate GEN_ADD_SUB;
 
-Cout <= C(N-1);
+Cout <= C(3);
 
 end architecture STRUCTURAL;

@@ -41,7 +41,7 @@ architecture STRUCTURAL of RCA8 is
 	
 begin
 	
-Bee <= B xor (Sel&Sel&Sel&Sel&Sel&Sel&Sel&Sel);
+Bee <= B xor (Sel&Sel&Sel&Sel&Sel&Sel&Sel&Sel); 
 	
 	GEN_ADD_SUB: for i in 0 to N-1 generate
 	
