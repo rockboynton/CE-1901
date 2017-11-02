@@ -26,14 +26,6 @@ end entity CSA8;
 
 
 architecture STRUCTURAL of CSA8 is 
-	
---	component FA is 
---	port(Af: in std_logic;
---		  Bf: in std_logic;
---		  Cinf: in std_logic;
---		  Sf: out std_logic;
---		  Coutf: out std_logic);
---	end component FA;
 
 	component RCA4 is 
 	port(
@@ -62,9 +54,6 @@ architecture STRUCTURAL of CSA8 is
 		  Y: out std_logic
 		 );	  
 	end component myMux2to1_bit;
-	
---	signal C: std_logic_vector(7 downto 0); --signals of the internal carry bits
---	signal Bee : std_logic_vector(7 downto 0); --uses an xor gate to decide whether B is positive or negative depending on sel input.
 
 	signal S1_0 : std_logic_vector(3 downto 0);
 	signal S1_1 : std_logic_vector(3 downto 0);
@@ -75,30 +64,6 @@ architecture STRUCTURAL of CSA8 is
 	signal LowNibble : std_logic_vector(3 downto 0);
 	
 begin 
-	
---	GEN_ADD: for i in 0 to N-1 generate
---	
---		LOWERBITS: if i = 0 generate 
---			FA1: FA port map (Af => A(i),
---									Bf => Bee(i),
---									Cinf => '0',
---									Sf => S(i),
---									Coutf => C(i)
---									);
---		end generate LOWERBITS;
---	
---		UPPERBITS: if i > 0 generate 
---			FAN: FA port map (Af => A(i),
---									Bf => Bee(i),
---									Cinf => C(i-1),
---									Sf => S(i),
---									Coutf => C(i)
---									);
---		end generate UPPERBITS;
---		
---end generate GEN_ADD_SUB;
-
-
 
 	RCA_LowNibble : RCA4 
 		port map (
@@ -144,6 +109,5 @@ begin
 					);
 
 S <= S1(3)&S1(2)&S1(1)&S1(0)&LowNibble(3)&LowNibble(2)&LowNibble(1)&LowNibble(0);
---Cout <= C(7);
 
 end architecture STRUCTURAL;
