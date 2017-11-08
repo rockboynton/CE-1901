@@ -20,7 +20,7 @@ entity RCA4 is
 		  B: in std_logic_vector(3 downto 0);
 		  Sel: in std_logic;
 		  S: out std_logic_vector(3 downto 0);
-		  Cout: out std_logic
+		  C4, C3: out std_logic
    );
 		  
 end entity RCA4;
@@ -65,6 +65,7 @@ Bee <= B xor (Sel&Sel&Sel&Sel);
 		
 end generate GEN_ADD_SUB;
 
-Cout <= C(3);
+C4 <= C(3);
+C3 <= C(2);
 
 end architecture STRUCTURAL;
